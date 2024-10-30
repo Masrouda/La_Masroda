@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المسرودات!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <style>
+        /* Reset أساسي */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Amiri', serif;
+            background-color: #111;
+            color: #FFD700;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #222;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        header nav ul li a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #FFF;
+            text-shadow: 0px 0px 5px #FFD700;
+            transform: scale(1.1);
+        }
+
+        /* الصفحة الرئيسية */
+        #home {
+            text-align: center;
+            padding: 5rem 1rem;
+            background: url('background.jpg') no-repeat center center/cover;
+        }
+
+        .intro h1 {
+            font-size: 3rem;
+            color: #FFD700;
+            margin-bottom: 1rem;
+        }
+
+        .intro p {
+            font-size: 1.5rem;
+            color: #FFF;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #FFD700;
+            color: #111;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #FFF;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #FFD700;
+        }
+
+        .character {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #222;
+            border-radius: 8px;
+            color: #FFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .character:hover {
+            transform: scale(1.05);
+        }
+
+        .character h3 {
+            font-size: 1.8rem;
+            color: #FFD700;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        /* تنسيق خاص للاقتباسات */
+        .character strong {
+            display: block;
+            font-size: 1.1rem;
+            font-family: 'Cairo', sans-serif;
+            margin-top: 1rem;
+            color: #FFD700;
+        }
+
+        .character p {
+            font-family: 'Amiri', serif;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #222;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- قائمة التنقل -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#wolves">عصابة الذئاب السبعة</a></li>
+                <li><a href="#thulat">ثلة الأتقياء</a></li>
+                <li><a href="#characters">الشخصيات</a></li> 
+                <li><a href="#stories">المسرودات</a></li> 
+                <li><a href="#info">المعلومات</a></li>  
+                <li><a href="#lotcha">اقتباسات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home">
+        <div class="intro">
+            <h1> مرحبا بكم في عالم المسرودات!</h1>
+            <p>حيث هنا تجد كل المسرودات المصورة والمروية! رحلة مليئة بالغموض، القوة، والنضال. اكتشف الشخصيات المذهلة وأسرارهم المثيرة والأشياء التي أكسل عن قولها الآن! هيب هيب هوري</p>
+            <a href="#wolves" class="cta-button">ابدأ الاستكشاف</a>
+        </div>
+    </section>
+
+    <!-- قسم الاقتباسات -->
+    <section id="lotcha">
+        <h2>الاقتباسات</h2>
+        <h3>بردائيل</h3>
+        <p>“لا طاعة للمخلوق في معصية الخالق”</p>
+    </section>
+
+    <!-- عصابة الذئاب السبعة -->
+    <section id="wolves">
+        <h2>عصابة الذئاب السبعة</h2>
+        <p>تعرف على أقوى شخصيات العصابة وما يميز كل منها.</p>
+    </section>
+
+    <!-- ثلة الأتقياء -->
+    <section id="thulat">
+        <h2>ثلة الأتقياء</h2>
+        <p>مجموعة سرية من المؤمنين الذين يحاربون الشر بقوة الإيمان والعزم.</p>
+    </section>
+
+    <!-- قسم الشخصيات -->
+    <section id="characters">
+        <h2>الشخصيات</h2>
+
+        <!-- زيلفا/زيلاف/أبو محمد -->
+        <div class="character" id="zilpha">
+            <h3>زيلفا/زيلاف/أبو محمد</h3>
+            <p>زيلفا: قائد "ثلة الأتقياء"، يتميز بالحكمة والإيمان وقوة خارقة في القتال.
+                <br> <strong>تفواهين:</strong> "آه، أبو محمد؟! فارس نبيل بقلب ناصع ويد طيبة، لكنه دائمًا ما يحتاج إلى غسالة بعد كل معركة بطولية! القوى الخارقة؟ أكيد يستعملها ليأخذ أفضلية المكان في طابور الخبز!"</p>
+        </div>
+
+        <!-- جهاد أستراغاس -->
+        <div class="character" id="jihad">
+            <h3>جهاد أستراغاس</h3>
+            <p>قائد عصابة الذئاب السبعة، مستذئب متعدد القوى الخارقة، يطمح ليكون الرقم واحد عالميًا.</p>
+        </div>
+
+        <!-- كتى -->
+        <div class="character" id="kat">
+            <h3>كتى</h3>
+            <p>متعطش للفوضى وذكي بشكل مخيف.
+                <br> <strong>تفواهين:</strong> "،كتى! مثل حقل زهور تجد وسطه بركانًا! قسوة وصبر… مثل علكة قديمة أصبحت سلاحًا سريًا هذا لا يجسد الشر بل الشر المطلق يجسده وهو في أكرم حالاته!"</p>
+        </div>
+
+        
+
+        <!-- هيكتور هايدن -->
+        <div class="character" id="hector">
+            <h3>هيكتور هايدن</h3>
+            <p>سريع جدًا لدرجة أن العالم يبدو بطيئًا له، طيب القلب وقوي. يجمع بين السرعة الخارقة والحكمة.</p>
+        </div>
+
+        <!-- سايرين كودوكي -->
+        <div class="character" id="sairen">
+            <h3>سايرين كودوكي</h3>
+            <p>متمرد وسريع الحركة، يتمتع برشاقة لا تضاهى وذكاء حاد. يتقن الكونغ فو ويميل إلى التحرر.</p>
+        </div>
+
+        <!-- برومهارد أزميث -->
+       <!-- برومهارد أزميث -->
+<div class="character" id="bromehard">
+    <h3>برومهارد أزميث</h3>
+    <p>قائد صارم وذكي للغاية، يعتمد على تقنيات الظلام لتعزيز قوته القتالية، ويمتلك ذكاءً حادًا وقدرة عالية على التخطيط الاستراتيجي.</p>
+</div>
+
+<!-- مالك خضر -->
+<div class="character" id="malik">
+    <h3>مالك خضر</h3>
+    <p>مستذئب قوي ذو بنية جسدية صلبة، قادر على التحكم بالعناصر وتغيير حجمه. بارع في الرماية ويتميز بالذكاء وسرعة البديهة.</p>
+</div>
+
+<!-- راسمير محموراي (سيراف) -->
+<div class="character" id="rasmir">
+    <h3>راسمير محموراي (سيراف)</h3>
+    <p>يتمتع بقدرة فائقة على الشفاء وامتصاص الألم من الآخرين. بارع في الملاكمة والمواي تاي، ولديه معرفة واسعة في نقاط ضعف الإنسان.</p>
+</div>
+
+<!-- بردائيل -->
+<div class="character" id="bardael">
+    <h3>بردائيل</h3>
+    <p>العضو الملكي في ثلة الأتقياء، يرتدي عباءة زرقاء".</p>
+</div>
+
+<!-- ألبادافيتو -->
+<div class="character" id="albadavito">
+    <h3>ألبادافيتو</h3>
+    <p>عضو في ثلة الأتقياء، يتميز بارتداء عباءة خزامية ويجمع بين الرقة والحكمة في قراراته.</p>
+</div>
+
+<!-- عبد الله -->
+<div class="character" id="abdullah">
+    <h3>عبد الله</h3>
+    <p>ابن مدير مؤسسة تعليمية ديني، يحمل ضغطاً كبيراً بسبب والده ويعاني من رهاب اجتماعي نصفي. لديه شخصية مختلفة على وسائل التواصل، ويعتبر محور المؤسسة</p>
+</div>
+
+<!-- محمد -->
+<div class="character" id="mohamed">
+    <h3>محمد</h3>
+    <p>صديق عبد الله الملقب بـ"المحنك الإجرامي"، قادر على التسلل والتهرب من المركز التعليمي ببراعة دون أن يُكتشف أمره.</p>
+</div>
+
+
+<!-- محمد الجديد -->
+<div class="character" id="newMohamed">
+    <h3>محمد الجديد</h3>
+    <p>صديق آخر لعبد الله بعد مغادرة أصدقائه السابقين. يتمتع بروح الدعابة ويساعد عبد الله في التكيف مع الصعوبات الاجتماعية الجديدة.</p>
+</div>
+
+<!-- قائمة الآمنيين السفليين العشرة -->
+<div class="character" id="lower-security">
+    <h3>الآمنيون السفليون العشرة</h3>
+    <ul>
+        <li>الأرقم</li>
+        <li>روما</li>
+        <li>نوهان</li>
+        <li>آراز</li>
+        <li>تالين</li>
+        <li>كورين</li>
+        <li>أران</li>
+        <li>شيمون</li>
+        <li>أسرون</li>
+        <li>يارن</li>
+    </ul>
+    <p>هؤلاء الآمنيون ينتمون إلى ثلة الأتقياء، ويتميزون بمهارات قتالية خاصة وولاء شديد لقضيتهم.</p>
+</div>
+  <div class="character" id="tafwaheen">
+            <h3 onclick="showTafwaheenInfo()">تفواهين</h3>
+            <p id="tafwaheen-info">بالله عليكم هذا يحتاج شرح؟ تفضل بنفسك وألقي نظرة.</p>
+        </div>
+    </section>
+
+    <footer>
+    <p>© 2024 جميع الحقوق محفوظة لي! وللمسرودات أيتها العاهرات اللاتي سرقن اسم سوردا! عاهرات حتى الصميم!.</p>
+</footer>
+
+<script>
+    const tafwaheenInfo = document.getElementById("tafwaheen-info");
+    const tafwaheenMessages = [
+        "بالله عليكم هذا يحتاج شرح؟ تفضل بنفسك وألقي نظرة",
+        "أرأيتم كمية الوقاحة؟ تضغط علي بلا إذن صريح من حكومتك! ",
+        "أنا حزين الآن، حزين لدرجة أكل السابنخ بالبصل",
+        "إلى أين أيها الدنيء؟! لقد انتهت معلوماتي هنا! ههه",
+        "شكرا لتضيعي وقتي ووقتك في عدم ذكر الله، أنت حقا فظيع",
+        "تفاصيل عني؟ رجاءا إرجع ولا تزعج نفسك بالتفاهات",
+        "يا رجل أو أيًا تكن، اهتم بشؤونك! ",
+        "لديك أمور تقوم بها، صحيح؟",
+        "لقد أثبت تماما أنك عديم القيمة بمجرد الضغط على اسمي",
+        "تحيا فلسطين! تحيا السودان! تحيا سوريا! تحيا اليمن! تحيا بورما! يحيا هتلر!",
+    ];
+
+    function showTafwaheenInfo() {
+        tafwaheenInfo.classList.add("shattered");
+        setTimeout(() => {
+            tafwaheenInfo.classList.remove("shattered");
+            tafwaheenInfo.textContent = tafwaheenMessages[Math.floor(Math.random() * tafwaheenMessages.length)];
+        }, 500);
+    }
+
+</script>
+</body>
